@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    RED.nodes.registerType('shape', {
+    RED.nodes.registerType('testdrei', {
         category: "process",
         color: "#47919e",
         defaults: {
@@ -9,20 +9,20 @@
         outputs: 1,
         icon: "font-awesome/fa-industry",
         label: function() {
-            return this.name || "Shape";
+            return this.name || "testDrei";
         },
-        paletteLabel: "Shape",
-        description: "Shape: Shaping through forming techniques"
+        paletteLabel: "testDrei",
+        description: "testDrei: Das ist ein test"
     });
 </script>
 
-<script type="text/html" data-template-name="shape">
+<script type="text/html" data-template-name="testdrei">
     <div class="form-row">
         <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
         <input type="text" id="node-input-name" placeholder="Name">
     </div>
     <div class="form-row">
         <label><i class="fa fa-info-circle"></i> Beschreibung</label>
-        <div style="margin: 5px 0; color: #666;">Shape: Shaping through forming techniques</div>
+        <div style="margin: 5px 0; color: #666;">testDrei: Das ist ein test</div>
     </div>
 </script>

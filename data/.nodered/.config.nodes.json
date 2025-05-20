@@ -620,6 +620,72 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\submerged\\submerged.js"
+            },
+            "test4": {
+                "name": "test4",
+                "types": [
+                    "test4"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test4\\test4.js"
+            },
+            "test5": {
+                "name": "test5",
+                "types": [
+                    "test5"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test5\\test5.js"
+            },
+            "test6": {
+                "name": "test6",
+                "types": [
+                    "test6"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test6\\test6.js"
+            },
+            "testdrei": {
+                "name": "testdrei",
+                "types": [
+                    "testdrei"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testdrei\\testdrei.js"
+            },
+            "tw": {
+                "name": "tw",
+                "types": [
+                    "tw"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\tw\\tw.js"
+            },
+            "versuch": {
+                "name": "versuch",
+                "types": [
+                    "versuch"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\versuch\\versuch.js"
             }
         }
     },
