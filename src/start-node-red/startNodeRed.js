@@ -1,17 +1,17 @@
 const path = require('path');
 const { spawn } = require('child_process');
 
-// Eine Ebene höher aus dem aktuellen Ordner
 const mainPath = path.resolve(__dirname, '../..', 'main.js');
 
-function start() {
-    const child = spawn('node', [mainPath], {
-        stdio: 'inherit',
-        detached: false
-    });
+const config = {
+    node: "node",
+    inherit: "inherit"
+}
 
-    child.on('exit', (code) => {
-        console.log(`Node-RED wurde beendet mit Code ${code}`);
+function start() {
+    spawn(config.node, [mainPath], {
+        stdio: config.inherit,
+        detached: false
     });
 }
 

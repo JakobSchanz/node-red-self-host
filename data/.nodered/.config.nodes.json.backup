@@ -577,6 +577,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ring\\ring.js"
             },
+            "sdfsd": {
+                "name": "sdfsd",
+                "types": [
+                    "sdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\sdfsd\\sdfsd.js"
+            },
             "selective-laser-sintering": {
                 "name": "selective-laser-sintering",
                 "types": [
@@ -643,6 +654,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test5\\test5.js"
             },
+            "test6": {
+                "name": "test6",
+                "types": [
+                    "test6"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test6\\test6.js"
+            },
             "testdrei": {
                 "name": "testdrei",
                 "types": [
@@ -653,6 +675,28 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testdrei\\testdrei.js"
+            },
+            "testsdfsd": {
+                "name": "testsdfsd",
+                "types": [
+                    "testsdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testsdfsd\\testsdfsd.js"
+            },
+            "testtsdfsdfsd": {
+                "name": "testtsdfsdfsd",
+                "types": [
+                    "testtsdfsdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testtsdfsdfsd\\testtsdfsdfsd.js"
             },
             "tw": {
                 "name": "tw",

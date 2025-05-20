@@ -489,6 +489,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\flux-cored\\flux-cored.js"
             },
+            "fsdfssdfsdf": {
+                "name": "fsdfssdfsdf",
+                "types": [
+                    "fsdfssdfsdf"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\fsdfssdfsdf\\fsdfssdfsdf.js"
+            },
             "hammer-mill-": {
                 "name": "hammer-mill-",
                 "types": [
@@ -577,6 +588,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ring\\ring.js"
             },
+            "sdfsd": {
+                "name": "sdfsd",
+                "types": [
+                    "sdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\sdfsd\\sdfsd.js"
+            },
             "selective-laser-sintering": {
                 "name": "selective-laser-sintering",
                 "types": [
@@ -664,6 +686,28 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testdrei\\testdrei.js"
+            },
+            "testsdfsd": {
+                "name": "testsdfsd",
+                "types": [
+                    "testsdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testsdfsd\\testsdfsd.js"
+            },
+            "testtsdfsdfsd": {
+                "name": "testtsdfsdfsd",
+                "types": [
+                    "testtsdfsdfsd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testtsdfsdfsd\\testtsdfsdfsd.js"
             },
             "tw": {
                 "name": "tw",
