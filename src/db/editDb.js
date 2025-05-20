@@ -25,28 +25,37 @@ async function getAllTables(dbConfig) {
 }
 
 function writeTables(tables) { 
-    const configPath = path.join(__dirname, config.dbConfigPath);
-    const fileContent = fs.readFileSync(configPath, config.utf);
-    let configTables;
-    eval("configTables = " + fileContent.replace(`${config.moduleExport} =`, ""));
-    configTables.tables = tables;
-    const newContent = `${config.moduleExport} = ${JSON.stringify(configTables, null, 2)};`;
-    fs.writeFileSync(configPath, newContent, config.utf);
+    try {
+        const configPath = path.join(__dirname, config.dbConfigPath);
+        const fileContent = fs.readFileSync(configPath, config.utf);
+        let configTables;
+        eval("configTables = " + fileContent.replace(`${config.moduleExport} =`, ""));
+        configTables.tables = tables;
+        const newContent = `${config.moduleExport} = ${JSON.stringify(configTables, null, 2)};`;
+        fs.writeFileSync(configPath, newContent, config.utf);
+    } catch (error) {
+        console.error("Error in Function: writeTables: ", error.message);
+    }
 }
 
 function createNewCustomNode(newNodeObject, nodes, dbConfig) {
-    const payload = {
-        message: ""
-    }
-    for (node in nodes) {
-        if (node.category == newNodeObject.table && node.name == newNodeObject.name) {
-            payload.message = "Error";
-            return payload;
+    try {
+        const payload = {
+            message: ""
         }
+        for (node in nodes) {
+            if (node.category == newNodeObject.table && node.name == newNodeObject.name) {
+                payload.message = "Error";
+                return payload;
+            }
+        }
+        writeInDb(newNodeObject, dbConfig);
+        payload.message = "Node Createt"
+        return payload;
+    } catch (error) {
+        console.error("Error in function createNewCustomNode: ", error.message);
     }
-    writeInDb(newNodeObject, dbConfig);
-    payload.message = "Node Createt"
-    return payload;
+   
 }
 
 async function writeInDb(newNodeObject, dbConfig) {

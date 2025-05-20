@@ -13,7 +13,7 @@ async function main() {
         await expressServer(nodes, dbConfig);
         await startNodeRed();
     } catch (err) {
-        console.error('start error:', err);
+        console.error('Error in function main: ', err);
         process.exit(1);
     }
 }

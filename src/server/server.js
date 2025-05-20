@@ -30,31 +30,51 @@ function startExpressServer(nodes, dbConfig) {
         app.use(express.json());
 
         app.post(config.endPoints.createCustomNode, async (req, res) => {
-            const result = await editDbFunctions.createNewCustomNode(req.body, nodes, dbConfig);
-            res.json(result);
+            try {
+                const result = await editDbFunctions.createNewCustomNode(req.body, nodes, dbConfig);
+                res.json(result);
+            } catch (error) {
+                console.error("Error when create custom Nodes: ", error.message);
+                res.status(500).json({ error: "Error when create custom Nodes" });
+            }
         });
 
         app.post(config.endPoints.createTable, async (req, res) => {
-            const result = await editDbFunctions.createNewTable(req.body, nodes, dbConfig);
-            res.json(result);
+            try {
+                const result = await editDbFunctions.createNewTable(req.body, nodes, dbConfig);
+                res.json(result);
+            } catch (error) {
+                console.error("Error when create new Table: ", error.message);
+                res.status(500).json({ error: "Error when create new Table" });
+            }
         });
 
         app.post(config.endPoints.getTables, async (req, res) => {
-            const result = await editDbFunctions.getAllTables(dbConfig);
-            res.json(result);
+            try {
+                const result = await editDbFunctions.getAllTables(dbConfig);
+                res.json(result);               
+            } catch (error) {
+                console.error("Error when fetch all Tables: ", error.message);
+                res.status(500).json({ error: "Error when fetch all Tables" });
+            }
+
         });
 
         app.post(config.endPoints.restart, async (req, res) => {
-            res.send("Node-RED is restarted...");
+            try {
+                res.send("Node-RED is restarted...");
 
-            spawn(config.node, [config.startNodeRedPath], {
-                detached: true,
-                stdio: config.inherit
-            }).unref();
+                spawn(config.node, [config.startNodeRedPath], {
+                    detached: true,
+                    stdio: config.inherit
+                }).unref();
 
-            process.exit();
+                process.exit();                
+            } catch (error) {
+                console.error("Error when restarting Node-Red: ", error.message);
+                res.status(500).json({ error: "Error when restarting Node-Red" });
+            }
         });
-
 
         server.listen(config.port, (err) => {
             if (err) reject(err);

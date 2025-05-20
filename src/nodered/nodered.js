@@ -5,19 +5,23 @@ let redStarted = false;
 
 
 async function startNodeRed() {
-    if (redStarted) {
-        return;
+    try {
+        const settings = require(path.join(__dirname, '../../data/programm_data/node_red_settings/settings.js'));
+
+        if (redStarted) {
+            return;
+        }
+
+        RED.init(server, settings);
+
+        app.use(settings.httpAdminRoot, RED.httpAdmin);
+        app.use(settings.httpNodeRoot, RED.httpNode);
+
+        await RED.start();
+        redStarted = true; 
+    } catch (error) {
+        console.error("Error in Function startNodeRed: ", error.message);
     }
-
-    const settings = require(path.join(__dirname, '../../data/programm_data/node_red_settings/settings.js'));
-
-    RED.init(server, settings);
-
-    app.use(settings.httpAdminRoot, RED.httpAdmin);
-    app.use(settings.httpNodeRoot, RED.httpNode);
-
-    await RED.start();
-    redStarted = true;
 }
 
 module.exports = startNodeRed;

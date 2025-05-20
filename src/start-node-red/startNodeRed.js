@@ -9,10 +9,14 @@ const config = {
 }
 
 function start() {
-    spawn(config.node, [mainPath], {
-        stdio: config.inherit,
-        detached: false
-    });
+    try {
+        spawn(config.node, [mainPath], {
+            stdio: config.inherit,
+            detached: false
+        });
+    } catch (error) {
+        console.error("Error in function start: ", error.message);
+    }
 }
 
 start();
