@@ -6,6 +6,7 @@ module.exports = {
     "database": "manufacturing_processes"
   },
   "tables": [
+    "newtest",
     "process",
     "resources",
     "test"

@@ -489,6 +489,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\flux-cored\\flux-cored.js"
             },
+            "fsdfssdfsdf": {
+                "name": "fsdfssdfsdf",
+                "types": [
+                    "fsdfssdfsdf"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\fsdfssdfsdf\\fsdfssdfsdf.js"
+            },
             "hammer-mill-": {
                 "name": "hammer-mill-",
                 "types": [
@@ -576,6 +587,28 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ring\\ring.js"
+            },
+            "sadasd": {
+                "name": "sadasd",
+                "types": [
+                    "sadasd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\sadasd\\sadasd.js"
+            },
+            "sadsad": {
+                "name": "sadsad",
+                "types": [
+                    "sadsad"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\sadsad\\sadsad.js"
             },
             "sdfsd": {
                 "name": "sdfsd",
@@ -686,6 +719,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testsdfsd\\testsdfsd.js"
+            },
+            "testsdfsdf": {
+                "name": "testsdfsdf",
+                "types": [
+                    "testsdfsdf"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\testsdfsdf\\testsdfsdf.js"
             },
             "testtsdfsdfsd": {
                 "name": "testtsdfsdfsd",

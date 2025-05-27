@@ -41,8 +41,8 @@ function startExpressServer(nodes, dbConfig) {
 
         app.post(config.endPoints.createTable, async (req, res) => {
             try {
-                const result = await editDbFunctions.createNewTable(req.body, nodes, dbConfig);
-                res.json(result);
+                const result = await editDbFunctions.createNewTable(req.body, dbConfig);
+                res.status(200).json(result);
             } catch (error) {
                 console.error("Error when create new Table: ", error.message);
                 res.status(500).json({ error: "Error when create new Table" });
@@ -62,13 +62,11 @@ function startExpressServer(nodes, dbConfig) {
 
         app.post(config.endPoints.restart, async (req, res) => {
             try {
-                res.send("Node-RED is restarted...");
-
                 spawn(config.node, [config.startNodeRedPath], {
                     detached: true,
                     stdio: config.inherit
                 }).unref();
-
+                res.json();
                 process.exit();                
             } catch (error) {
                 console.error("Error when restarting Node-Red: ", error.message);

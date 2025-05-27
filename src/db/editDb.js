@@ -76,23 +76,38 @@ async function writeInDb(newNodeObject, dbConfig) {
     }
 }
 
-async function createNewTable(body, nodes, dbConfig) {
+async function createNewTable(body, dbConfig) {
     let connection;
 
     try {
-        //icon und color auch custom 
+        let tableNodeColor;
+        let tableNodeIcon;
+
+        if (body.tableColor === "") {
+            tableNodeColor =  '#47919e';
+        } else {
+            tableNodeColor = body.tableColor;
+        }
+
+        if (body.tableIcon === "") {
+            tableNodeIcon =  'fa-industry';
+        } else {
+            tableNodeIcon = body.tableIcon;
+        }
+
         connection = await mysql.createConnection (dbConfig.basic_config);
-        const createTableSQL = `CREATE TABLE IF NOT EXISTS \`${body.table}\` (
+        const createTableSQL = `CREATE TABLE IF NOT EXISTS \`${body.tableName}\` (
             id INT AUTO_INCREMENT PRIMARY KEY,
             name VARCHAR(255),
             description TEXT,
             category VARCHAR(50),
-            color VARCHAR(50) DEFAULT '#47919e',
-            icon VARCHAR(50) DEFAULT 'fa-industry'
+            color VARCHAR(50) DEFAULT '${tableNodeColor}',
+            icon VARCHAR(50) DEFAULT '${tableNodeIcon}'
         )
         `;
 
         await connection.execute(createTableSQL);
+        return {"starus": 200}
     } catch (error) {
         console.error("error when conecting to db", error.message);
     }
