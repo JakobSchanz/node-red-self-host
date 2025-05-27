@@ -6,6 +6,7 @@ const fs = require("fs");
 const config = {
     sqlComands: {
         getTables: "SHOW TABLES",
+        selectAll: "SELECT * FROM"
     },
     utf: "utf8",
     dbConfigPath: "../../data/programm_data/db/db-config.js",
@@ -13,19 +14,22 @@ const config = {
 }
 
 async function getDataFromDB(tables) {
-    console.log(tables);
-    let all_results = [];
+    try {
+        let all_results = [];
 
-    const connection = await mysql.createConnection(dbConfig.basic_config);
+        const connection = await mysql.createConnection(dbConfig.basic_config);
 
-    for (const table of tables) {
-        const [results] = await connection.execute(`SELECT * FROM ${table}`); 
-        all_results = all_results.concat(results); 
+        for (const table of tables) {
+            const [results] = await connection.execute(`${config.sqlComands.selectAll} ${table}`); 
+            all_results = all_results.concat(results); 
+        }
+
+        await connection.end();
+
+        return all_results;
+    } catch (error) {
+        console.error("Error in Function getDataFromDB", error.message);
     }
-
-    await connection.end();
-
-    return all_results;
 }
 
 async function getAllTables(dbConfig) {
