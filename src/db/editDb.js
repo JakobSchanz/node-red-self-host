@@ -107,7 +107,7 @@ async function createNewTable(body, dbConfig) {
         `;
 
         await connection.execute(createTableSQL);
-        return {"starus": 200}
+        return {"status": 200}
     } catch (error) {
         console.error("error when conecting to db", error.message);
     }
