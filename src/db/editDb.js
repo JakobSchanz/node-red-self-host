@@ -50,7 +50,7 @@ function createNewCustomNode(newNodeObject, nodes, dbConfig) {
             }
         }
         writeInDb(newNodeObject, dbConfig);
-        payload.message = "Node Createt"
+        payload.message = "Node Created"
         return payload;
     } catch (error) {
         console.error("Error in function createNewCustomNode: ", error.message);

@@ -9,6 +9,7 @@ module.exports = {
     "newtest",
     "process",
     "resources",
-    "test"
+    "test",
+    "testmiticon"
   ]
 };
