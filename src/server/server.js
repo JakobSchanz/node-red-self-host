@@ -4,7 +4,6 @@ const cors = require('cors');
 const { app, server } = require('../../data/programm_data/serverData/serverData.js');
 
 const editDbFunctions = require ('../db/editDb.js');
-//const { config } = require("process"); was fehlt da 
 
 const config = {
     url: 'http://localhost:3000',
