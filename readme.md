@@ -52,6 +52,6 @@ The **description** field contains the description shown in Node-RED.
 The **category** field indicates the category where the node will appear in Node-RED.  
 The **color** field contains a hex color code for the node's color, for example: `#47919e`.  
 A default color value is set when the table is created and applies to the whole category.  
-The same applies to the **icon** field, where a default value must also be set initially. Node-RED only accepts icons from FontAwesome version 4:  
-[https://fontawesome.com/v4/icons/](https://fontawesome.com/v4/icons/)  
+The same applies to the **icon** field, where a default value must also be set initially. Node-RED only accepts icons from <br> 
+FontAwesome version 4: [https://fontawesome.com/v4/icons/](https://fontawesome.com/v4/icons/)  
 Only the icon name is required, for example: `fa-industry`.
