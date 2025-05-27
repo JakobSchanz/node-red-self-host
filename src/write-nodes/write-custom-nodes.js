@@ -36,19 +36,23 @@ async function generateNodeContent(safeName, name, description, category, color,
 }
 
 async function createCustomNodesFromDB(nodes) {
-    await fs.rm(nodesDir, { recursive: true, force: true });
-    await fs.mkdir(nodesDir, { recursive: true });
-    const jsTemplateFilePath = path.join(__dirname, config.path + config.js_template_path);
-    const htmlTemplateFilePath = path.join(__dirname, config.path + config.html_template_path);
+    try {
+        await fs.rm(nodesDir, { recursive: true, force: true });
+        await fs.mkdir(nodesDir, { recursive: true });
+        const jsTemplateFilePath = path.join(__dirname, config.path + config.js_template_path);
+        const htmlTemplateFilePath = path.join(__dirname, config.path + config.html_template_path);
 
-    for (const { name, description, category, color, icon } of nodes) {
-        const safeName = generateSafeFileName(name);
-        const js = await generateNodeContent(safeName, name, description, category, color, icon, jsTemplateFilePath);
-        const html = await generateNodeContent(safeName, name, description, category, color, icon, htmlTemplateFilePath);
-        const nodePath = path.join(nodesDir, safeName);
-        await fs.mkdir(nodePath, { recursive: true });
-        await fs.writeFile(path.join(nodePath, safeName + config.js_file), js);
-        await fs.writeFile(path.join(nodePath, safeName + config.html_file), html);
+        for (const { name, description, category, color, icon } of nodes) {
+            const safeName = generateSafeFileName(name);
+            const js = await generateNodeContent(safeName, name, description, category, color, icon, jsTemplateFilePath);
+            const html = await generateNodeContent(safeName, name, description, category, color, icon, htmlTemplateFilePath);
+            const nodePath = path.join(nodesDir, safeName);
+            await fs.mkdir(nodePath, { recursive: true });
+            await fs.writeFile(path.join(nodePath, safeName + config.js_file), js);
+            await fs.writeFile(path.join(nodePath, safeName + config.html_file), html);
+        }
+    } catch (error) {
+        console.err("Error in Function createCustomNedesFromDB: ", error.message);
     }
 }
 
