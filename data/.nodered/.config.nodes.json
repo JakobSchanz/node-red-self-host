@@ -423,6 +423,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             },
+            "": {
+                "name": "",
+                "types": [
+                    ""
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\.js"
+            },
             "asdas": {
                 "name": "asdas",
                 "types": [
@@ -466,6 +477,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\chemical-vapor-deposition-\\chemical-vapor-deposition-.js"
+            },
+            "dasd": {
+                "name": "dasd",
+                "types": [
+                    "dasd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\dasd\\dasd.js"
             },
             "drop-forge": {
                 "name": "drop-forge",
@@ -565,6 +587,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\machine\\machine.js"
+            },
+            "neuerversuch": {
+                "name": "neuerversuch",
+                "types": [
+                    "neuerversuch"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\neuerversuch\\neuerversuch.js"
             },
             "plastic-mold-casting--": {
                 "name": "plastic-mold-casting--",

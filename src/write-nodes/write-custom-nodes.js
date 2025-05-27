@@ -21,7 +21,7 @@ async function generateNodeContent(safeName, name, description, category, color,
     try {
         templateContent = await fs.readFile(templateFilePath, 'utf8');
     } catch (err) {
-        throw new Error(`Error reading the HTML template file: ${err.message}`);
+        throw new Error(`Error reading the template file: ${err.message}`);
     }
     const generatedContent = templateContent
         .replace(/{{category}}/g, category)
@@ -52,7 +52,7 @@ async function createCustomNodesFromDB(nodes) {
             await fs.writeFile(path.join(nodePath, safeName + config.html_file), html);
         }
     } catch (error) {
-        console.err("Error in Function createCustomNedesFromDB: ", error.message);
+        console.error("Error in Function createCustomNedesFromDB: ", error.message);
     }
 }
 
