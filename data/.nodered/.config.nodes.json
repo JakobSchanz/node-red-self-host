@@ -599,6 +599,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\neuerversuch\\neuerversuch.js"
             },
+            "neuerversuch4": {
+                "name": "neuerversuch4",
+                "types": [
+                    "neuerversuch4"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\neuerversuch4\\neuerversuch4.js"
+            },
             "plastic-mold-casting--": {
                 "name": "plastic-mold-casting--",
                 "types": [
