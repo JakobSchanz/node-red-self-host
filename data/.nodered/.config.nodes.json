@@ -500,6 +500,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\flux-cored\\flux-cored.js"
             },
+            "fsdfsdf": {
+                "name": "fsdfsdf",
+                "types": [
+                    "fsdfsdf"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\fsdfsdf\\fsdfsdf.js"
+            },
             "fsdfssdfsdf": {
                 "name": "fsdfssdfsdf",
                 "types": [

@@ -423,6 +423,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
             },
+            "asdas": {
+                "name": "asdas",
+                "types": [
+                    "asdas"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\asdas\\asdas.js"
+            },
             "ball-mill": {
                 "name": "ball-mill",
                 "types": [
@@ -588,17 +599,6 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ring\\ring.js"
             },
-            "sadasd": {
-                "name": "sadasd",
-                "types": [
-                    "sadasd"
-                ],
-                "enabled": true,
-                "local": false,
-                "user": false,
-                "module": "node-red",
-                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\sadasd\\sadasd.js"
-            },
             "sadsad": {
                 "name": "sadsad",
                 "types": [
@@ -664,6 +664,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\submerged\\submerged.js"
+            },
+            "test3": {
+                "name": "test3",
+                "types": [
+                    "test3"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\test3\\test3.js"
             },
             "test4": {
                 "name": "test4",
