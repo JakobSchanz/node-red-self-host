@@ -4,6 +4,8 @@ This program hosts Node-RED, which can be accessed either directly via the URL o
 The content of the database can be edited via the React page.  
 The custom nodes are loaded from a MySQL database and saved locally.
 
+Mehr Informationen unter: [https://github.com/JakobSchanz/embed-react_node-red/tree/main](https://github.com/JakobSchanz/embed-react_node-red/tree/main)
+
 ## Starting the Program
 
 To start the programme, navigate to the folder containing the file `startNodeRed.js`. This should be the order start-node-red. <br>
@@ -82,3 +84,26 @@ A default color value is set when the table is created and applies to the whole 
 The same applies to the **icon** field, where a default value must also be set initially. Node-RED only accepts icons from <br> 
 FontAwesome version 4: [https://fontawesome.com/v4/icons/](https://fontawesome.com/v4/icons/)  
 Only the icon name is required, for example: `fa-industry`.
+
+## Change settings
+
+To change settings you have to go to the following path of the <br> programme: `data/programm_data`. <br> 
+There you can edit the database and node-red settings and edit the templates for the custom nodes. 
+
+### Node-Red settings 
+
+The node-red settigs are located in the following path: `./node_red_settings/settings.js.` <br> 
+All settings that can also be edited / added under normally hosted node-red can be added there. <br> 
+More information: [https://nodered.org/docs/user-guide/runtime/configuration](https://nodered.org/docs/user-guide/runtime/configuration)
+
+
+You can also customise the templates for the custom nodes by going to the `node_templates` folder. <br> 
+There are 2 folders `html_template` and `js_template`. <br> 
+The files contained therein are used by the programme to create the nodes. <br>
+Changes are applied after a restart of the programme. 
+
+### Database settings 
+
+The database settings are in the folder `./db`. <br>
+The **host**, **username**, **password** and the **database** used can be customised in the basic_config area. <br>
+Nothing needs to be adjusted in the tables area as the programme selects the tables automatically. 
