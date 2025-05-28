@@ -8,7 +8,7 @@ Mehr Informationen unter: [https://github.com/JakobSchanz/embed-react_node-red/t
 
 ## Starting the Program
 
-To start the programme, navigate to the folder containing the file `startNodeRed.js`. This should be the order start-node-red. <br>
+To start the programme, navigate to the folder containing the file `startNodeRed.js`. This should be the order `src/start-node-red`. <br>
 Then execute the following command: 
 ```bash
 node startNodeRed.js
