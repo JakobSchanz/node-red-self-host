@@ -3,11 +3,13 @@
 This program hosts Node-RED, which can be accessed either directly via the URL or through the React page in the "Node-RED" tab.  
 The custom nodes are loaded from a MySQL database and saved locally.
 
+More information at: [https://github.com/JakobSchanz/embed-react_node-red/tree/main](https://github.com/JakobSchanz/embed-react_node-red/tree/main)
+
 ## Starting the Program
 
 To start the program, navigate to the folder containing the `main.js` file.  
 Then execute the following command:  
-```bash
+```
 node main.js
 ```
 
@@ -55,3 +57,61 @@ A default color value is set when the table is created and applies to the whole 
 The same applies to the **icon** field, where a default value must also be set initially. Node-RED only accepts icons from <br> 
 FontAwesome version 4: [https://fontawesome.com/v4/icons/](https://fontawesome.com/v4/icons/)  
 Only the icon name is required, for example: `fa-industry`.
+
+## Add nodes to the database SQL Comments
+
+Login data is required to add nodes to the database. <br>
+To see a change in Node-Red, Node-Red must be restarted. <br>
+
+### Database Selecting
+```
+USE manufacturing_processes;
+```
+
+### Show all Existing Tables
+```
+SHOW TABLES;
+```
+
+### Show table content 
+```
+SELECT * FROM table_name;
+```
+
+### Add new node
+```
+INSERT INTO table_name (name, description, category, color, icon) VALUES ('name_content', 'description_content', 'process_content', 'color_code', 'icon_code');
+```
+
+### Delete node
+```
+DELETE FROM table_name WHERE id_name = id;
+```
+
+### Create new Table
+```
+CREATE TABLE table_name (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255), description TEXT, category VARCHAR(255), color VARCHAR(7), icon VARCHAR(50));
+```
+
+## Change settings
+
+To change settings you have to go to the following path of the <br> programme: `data/programm_data`. <br> 
+There you can edit the database and node-red settings and edit the templates for the custom nodes. 
+
+### Node-Red settings 
+
+The node-red settigs are located in the following path: `./node_red_settings/settings.js.` <br> 
+All settings that can also be edited / added under normally hosted node-red can be added there. <br> 
+More information: [https://nodered.org/docs/user-guide/runtime/configuration](https://nodered.org/docs/user-guide/runtime/configuration)
+
+
+You can also customise the templates for the custom nodes by going to the `node_templates` folder. <br> 
+There are 2 folders `html_template` and `js_template`. <br> 
+The files contained therein are used by the programme to create the nodes. <br>
+Changes are applied after a restart of the programme. 
+
+### Database settings 
+
+The database settings are in the folder `./db`. <br>
+The **host**, **username**, **password** and the **database** used can be customised in the basic_config area. <br>
+Nothing needs to be adjusted in the tables area as the programme selects the tables automatically. 
