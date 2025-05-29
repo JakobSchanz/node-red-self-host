@@ -24,7 +24,8 @@
         "debug": {
             "clearType": "filtered"
         },
-        "menu-menu-item-palette": true
+        "menu-menu-item-palette": true,
+        "menu-menu-item-sidebar": false
     },
     "admin": {
         "editor": {

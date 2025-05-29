@@ -467,6 +467,17 @@
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\drop-forge\\drop-forge.js"
             },
+            "einneuer": {
+                "name": "einneuer",
+                "types": [
+                    "einneuer"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\einneuer\\einneuer.js"
+            },
             "extrusion": {
                 "name": "extrusion",
                 "types": [
@@ -477,6 +488,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\extrusion\\extrusion.js"
+            },
+            "fds": {
+                "name": "fds",
+                "types": [
+                    "fds"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\fds\\fds.js"
             },
             "flux-cored": {
                 "name": "flux-cored",
@@ -532,6 +554,17 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\machine\\machine.js"
+            },
+            "neu": {
+                "name": "neu",
+                "types": [
+                    "neu"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\neu\\neu.js"
             },
             "plastic-mold-casting--": {
                 "name": "plastic-mold-casting--",
@@ -620,6 +653,28 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\submerged\\submerged.js"
+            },
+            "teesx": {
+                "name": "teesx",
+                "types": [
+                    "teesx"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\teesx\\teesx.js"
+            },
+            "trsfd": {
+                "name": "trsfd",
+                "types": [
+                    "trsfd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\trsfd\\trsfd.js"
             }
         }
     },

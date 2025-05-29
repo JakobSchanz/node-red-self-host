@@ -422,6 +422,248 @@
                 "user": false,
                 "module": "node-red",
                 "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\node_modules\\@node-red\\nodes\\core\\storage\\23-watch.js"
+            },
+            "ball-mill": {
+                "name": "ball-mill",
+                "types": [
+                    "ball-mill"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ball-mill\\ball-mill.js"
+            },
+            "blow-molding": {
+                "name": "blow-molding",
+                "types": [
+                    "blow-molding"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\blow-molding\\blow-molding.js"
+            },
+            "chemical-vapor-deposition-": {
+                "name": "chemical-vapor-deposition-",
+                "types": [
+                    "chemical-vapor-deposition-"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\chemical-vapor-deposition-\\chemical-vapor-deposition-.js"
+            },
+            "drop-forge": {
+                "name": "drop-forge",
+                "types": [
+                    "drop-forge"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\drop-forge\\drop-forge.js"
+            },
+            "einneuer": {
+                "name": "einneuer",
+                "types": [
+                    "einneuer"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\einneuer\\einneuer.js"
+            },
+            "extrusion": {
+                "name": "extrusion",
+                "types": [
+                    "extrusion"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\extrusion\\extrusion.js"
+            },
+            "flux-cored": {
+                "name": "flux-cored",
+                "types": [
+                    "flux-cored"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\flux-cored\\flux-cored.js"
+            },
+            "hammer-mill-": {
+                "name": "hammer-mill-",
+                "types": [
+                    "hammer-mill-"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\hammer-mill-\\hammer-mill-.js"
+            },
+            "inkjet-printing": {
+                "name": "inkjet-printing",
+                "types": [
+                    "inkjet-printing"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\inkjet-printing\\inkjet-printing.js"
+            },
+            "labour": {
+                "name": "labour",
+                "types": [
+                    "labour"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\labour\\labour.js"
+            },
+            "machine": {
+                "name": "machine",
+                "types": [
+                    "machine"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\machine\\machine.js"
+            },
+            "neu": {
+                "name": "neu",
+                "types": [
+                    "neu"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\neu\\neu.js"
+            },
+            "plastic-mold-casting--": {
+                "name": "plastic-mold-casting--",
+                "types": [
+                    "plastic-mold-casting--"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\plastic-mold-casting--\\plastic-mold-casting--.js"
+            },
+            "press": {
+                "name": "press",
+                "types": [
+                    "press"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\press\\press.js"
+            },
+            "resin-casting": {
+                "name": "resin-casting",
+                "types": [
+                    "resin-casting"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\resin-casting\\resin-casting.js"
+            },
+            "ring": {
+                "name": "ring",
+                "types": [
+                    "ring"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\ring\\ring.js"
+            },
+            "selective-laser-sintering": {
+                "name": "selective-laser-sintering",
+                "types": [
+                    "selective-laser-sintering"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\selective-laser-sintering\\selective-laser-sintering.js"
+            },
+            "shape": {
+                "name": "shape",
+                "types": [
+                    "shape"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\shape\\shape.js"
+            },
+            "spark-plasma-sintering-": {
+                "name": "spark-plasma-sintering-",
+                "types": [
+                    "spark-plasma-sintering-"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\spark-plasma-sintering-\\spark-plasma-sintering-.js"
+            },
+            "submerged": {
+                "name": "submerged",
+                "types": [
+                    "submerged"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\submerged\\submerged.js"
+            },
+            "teesx": {
+                "name": "teesx",
+                "types": [
+                    "teesx"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\teesx\\teesx.js"
+            },
+            "trsfd": {
+                "name": "trsfd",
+                "types": [
+                    "trsfd"
+                ],
+                "enabled": true,
+                "local": false,
+                "user": false,
+                "module": "node-red",
+                "file": "C:\\Users\\Jakob\\Desktop\\home\\projekt\\backend\\data\\custom-nodes\\trsfd\\trsfd.js"
             }
         }
     },

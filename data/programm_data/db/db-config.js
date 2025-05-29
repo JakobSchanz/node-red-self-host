@@ -7,6 +7,7 @@ module.exports = {
   },
   "tables": [
     "process",
-    "resources"
+    "resources",
+    "test"
   ]
 };

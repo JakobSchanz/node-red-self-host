@@ -4,6 +4,7 @@ const cors = require('cors');
 const { app, server } = require('../../data/programm_data/serverData/serverData.js');
 
 const editDbFunctions = require ('../db/editDb.js');
+const getAllNodes = require ('../db/get-node-data-from-database.js')
 
 const config = {
     url: 'http://localhost:3000',
@@ -16,6 +17,7 @@ const config = {
         createTable: "/db-api/crate-new-table",
         getTables: "/db-api/table-list",
         restart: "/restart-node-red",
+        gettAllNodes: "/db-api/get-all-nodes",
     }
 }
 
@@ -70,6 +72,16 @@ function startExpressServer(nodes, dbConfig) {
             } catch (error) {
                 console.error("Error when restarting Node-Red: ", error.message);
                 res.status(500).json({ error: "Error when restarting Node-Red" });
+            }
+        });
+
+        app.post(config.endPoints.gettAllNodes, async (req, res) => {
+            try {
+                const result = await getAllNodes(dbConfig.tables);
+                res.json(result);            
+            } catch (error) {
+                console.error("Error when et all Custom Nodes: ", error.message);
+                res.status(500).json({ error: "Error when et all Custom Nodes" });
             }
         });
 
