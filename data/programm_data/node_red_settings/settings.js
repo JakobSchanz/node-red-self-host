@@ -20,6 +20,10 @@ module.exports = {
     origin: "*",
     methods: "GET,POST,PUT,DELETE",
   },
+  httpHeaders: {
+    "X-Frame-Options": "ALLOWALL",
+    "Content-Security-Policy": "frame-ancestors *"
+  },
 
   editorTheme: {
   },
